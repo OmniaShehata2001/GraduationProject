@@ -90,3 +90,10 @@ header nav ul li a:hover {
     color: aqua;
     text-decoration: none;
 }
+
+form {
+    margin: 10rem
+}
+.Authenticated {
+    margin: 10rem
+}

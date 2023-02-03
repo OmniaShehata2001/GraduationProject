@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@inject UserService _userService
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,14 +25,46 @@
             <img src="~/Images/79ec4b19-22c5-4ee1-bf7a-48316e894f2e.jfif" alt="logo" width="60px">
             <nav>
                 <ul>
-                    <li> <a class="active" href="#section">Home</a> </li>
+                    <li class="active">
+                        <a asp-controller="Home" asp-action="Index">
+                            <div class="login">Login</div>
+                        </a>
+                    </li>
                     <li> <a class="Guide" href="#section">Guide</a></li>
                     <li> <a class="help" href="#section">Help</a></li>
                     <li> <a class="Profile" href="#section">Profile</a></li>
-                    <li> <a class="login" href="#section">Login</a></li>
+                    @{
+                        if (!_userService.UserIsLogin())
+                        {
+                            <li class="nav-item">
+                                <a asp-controller="Login" asp-action="Index">
+                                    <div class="active">Login</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-controller="Users" asp-action="Index">
+                                    <div class="active">Register</div>
+                                </a>
+                            </li>
+
+
+                        }
+                        else
+                        {
+                            <li>
+                                <a asp-controller="Home" asp-action="Logout">
+                                    <div class="active">
+                                        @_userService.UserName
+                                        <span style="color:chartreuse">
+                                            Logout
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        }
+                    }
                 </ul>
             </nav>
-        </div>
         </div>
     </header>
 

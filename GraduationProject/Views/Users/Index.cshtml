@@ -1,6 +1,60 @@
-﻿@Model 
+﻿@model AddNewUserVM
+<h4>
 
-<form method="post" asp-controller="Users" asp-action="AddUser">
-    <input type="email" name="emailaddress">
-    <input type="submit">
+    Add User
+
+</h4>
+
+
+<form class="user-form" asp-action="AddUser" method="post" role="form">
+
+
+
+
+    <h5 style="color:red"> @Html.ValidationMessage("Validation Error")</h5>
+
+
+
+
+
+
+
+    <div class="form-group">
+        <label asp-for="Phone" class="col-md-12 control-label"></label>
+        <div class="col-md-12">
+            <input asp-for="Phone" class="form-control" required />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Mail" class="col-md-12 control-label"></label>
+        <div class="col-md-12">
+            <input asp-for="Mail" class="form-control" required />
+            <span asp-validation-for="Mail" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" class="col-md-12 control-label"></label>
+        <div class="col-md-12">
+            <input asp-for="Password" class="form-control" type="password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="Name" class="col-md-12 control-label"></label>
+        <div class="col-md-12">
+            <input asp-for="Name" class="form-control" required />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-outline-primary update-user " value="ADD" />
+        </div>
+    </div>
 </form>
+
+
+
