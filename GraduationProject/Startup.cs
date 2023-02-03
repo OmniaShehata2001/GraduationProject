@@ -1,4 +1,5 @@
 using GraduationProject.DatabaseContext;
+using GraduationProject.User;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +22,11 @@ namespace GraduationProject
         {
             services.AddRazorPages();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
-            services.AddDbContext<GraduationProjectContext>(opt => opt.UseSqlServer(Configuration.GetSection("ConnectionStrings:Default").Value));
+            services.AddDbContext<GraduationProjectContext>(opt =>
+            opt.UseSqlServer(Configuration.GetSection("ConnectionStrings:Default").Value)
+            .EnableSensitiveDataLogging());
+            services.AddSingleton<UserService>();
+            services.AddHttpContextAccessor();
 
         }
 
@@ -37,15 +42,9 @@ namespace GraduationProject
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
             }
-
-
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
-            app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
