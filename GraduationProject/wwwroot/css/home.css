@@ -1,0 +1,247 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+@media(min-width:768px){
+    .logo{
+        width: 750px;
+    }
+    }
+    @media(min-width:992px){
+        .logo{
+            width: 970px;
+        }
+        }
+@media(min-width:1200px){
+        .logo{
+                width: 1170px;
+            }
+    }
+header {
+    left: 100px;
+    position: absolute;
+    width: 100%;
+}
+header .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+@media (max-width: 767px){
+    header .logo img{
+        width: 100%;
+        height: auto;
+    }
+}
+header .logo img{
+    height: 60px;
+    width: 70px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+header nav{
+    font-size: 0;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav ul{
+    display: flex;
+    font-weight: 600;
+}
+header nav ul li a{
+display: block;
+font-size: 14px;
+transition: 0.3s;
+padding: 10px 40px;
+color:black;
+position: relative;
+}
+.video{
+    width: 100%;
+}
+.video img{
+    width: 100%;
+    height: 100%;
+}
+header nav ul li a.active,
+header nav ul li a:hover{
+    color:aqua;
+    text-decoration: none;
+}
+@media (max-width: 767px) {
+    .landing .change-background {
+        display: none;
+    }
+}
+.landing .change-background {
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    color:#ddd;
+}
+.landing .fa-angle-left {
+    left: 30px;
+}
+.landing .fa-angle-right {
+    right: 30px;
+}
+.landing .text {
+    color: black;
+    justify-content: center;
+    text-align: center;
+    padding: 20rem;
+    background: url(../Images/a2ad4beb-05a5-4922-a1bd-9b6885cbfcf2.Jfif) no-repeat;
+    background-size: cover;
+}
+.landing .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    display: flex;
+    font-size: 0;
+}
+.landing .bullets li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.landing .bullets li.active {
+    background-color: aqua;
+    border-color: aqua;
+}
+.content {
+
+    color: black;
+    text-align: center;
+    letter-spacing: 1px;
+    text-indent: 10px;
+    margin-top: 15px;
+}
+.content h2 {
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+.content h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #333;
+    bottom: -30px;
+    width: 120px;
+}
+.content h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    bottom: -38px;
+    background-color: white;
+}
+.content p {
+    width: 550px;
+    margin: 0 450px 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
+}
+.diseases{
+    display: flex;
+}
+.cointainer{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    margin-left: 70px;
+    background-color: silver;
+    padding: 20px;
+    border-radius: 20px;
+}
+.alzheimer{
+    margin-left: 40px;
+}
+.cointainer img{
+    width: 100px;
+}
+.cointainer .alzheimer h3{
+    font-weight: 600;
+}
+.container2{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    margin-left: 70px;
+    background-color: silver;
+    padding: 20px;
+    border-radius: 20px;
+}
+.cancer{
+    margin-left: 40px;
+}
+.container2 img{
+    width: 100px;
+}
+.container2 .cancer h3{
+    font-weight: 600;
+}
+.diseases .cointainer:hover{
+    cursor: pointer;
+    margin-top: -10px;
+}
+.diseases .container2:hover{
+    cursor: pointer;
+    margin-top: -10px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-image: url("../Images/a2ad4beb-05a5-4922-a1bd-9b6885cbfcf2.Jfif");
+    padding: 30px;
+    background-size: cover;
+    bottom: 0;
+}
+.footer .container img{
+    width: 90px;
+}
+.footer .container{
+    text-align: center;
+}
+.footer p{
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+    width: fit-content;
+    margin: 20px auto;
+}
+.footer .container .social-icons{
+    padding: 10px 15px;
+}
+.footer .container .social-icons:hover{
+    cursor: pointer;
+}
