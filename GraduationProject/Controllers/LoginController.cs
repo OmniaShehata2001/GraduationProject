@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
+using System;
 
 namespace GraduationProject.Controllers
 {
@@ -41,7 +42,7 @@ namespace GraduationProject.Controllers
                 ModelState.AddModelError("Validation Error", "The Password Incorrect");
                 return View("Index",loginviewmodel);
             }
-            userService.LogInUser(userNeedToCheck.Id,userNeedToCheck.Name);
+            userService.LogInUser(userNeedToCheck.Id, userNeedToCheck.Name);
 
 
             return RedirectToAction("Index", "Home");

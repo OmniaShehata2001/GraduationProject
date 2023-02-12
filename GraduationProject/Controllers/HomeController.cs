@@ -1,9 +1,5 @@
 ﻿using GraduationProject.User;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace GraduationProject.Controllers
 {
@@ -19,10 +15,10 @@ namespace GraduationProject.Controllers
         {
             return View();
         }
-        public IActionResult Logout() 
+        public IActionResult Logout()
         {
             _userService.LogOutUser();
-            return View("Index","Home");
+            return View("Index", "Home");
         }
     }
 }

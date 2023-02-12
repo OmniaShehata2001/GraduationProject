@@ -34,9 +34,9 @@ body {
 
 header {
     left: 0;
-    position: absolute;
-    z-index: 2;
     width: 100%;
+    background: url(../Images/a2ad4beb-05a5-4922-a1bd-9b6885cbfcf2.Jfif);
+    background-size:cover;
 }
 
     header .logo {
@@ -48,7 +48,7 @@ header {
 
         header .logo img {
             height: 60px;
-            width: 70px;
+            width: 98px;
             padding-left: 5px;
             padding-top: 5px;
         }
@@ -69,7 +69,7 @@ header {
                 font-size: 14px;
                 transition: 0.3s;
                 padding: 10px 40px;
-                color: white;
+                color:black;
                 position: relative;
                 z-index: 2;
             }
@@ -92,7 +92,7 @@ header nav ul li a:hover {
 }
 
 form {
-    margin: 10rem
+    
 }
 .Authenticated {
     margin: 10rem

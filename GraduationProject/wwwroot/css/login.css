@@ -1,0 +1,103 @@
+﻿.login-lable {
+    padding-top: 0rem;
+    padding-left: 45%;
+    font-size: 35px;
+    margin-left: 0rem;
+}
+.login-form {
+    margin-right: 25%;
+    justify-content: center;
+    margin-left: 25%;
+    box-shadow: -2px -1px 5px 6px grey;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-top: 62px;
+}
+.login-buttom {
+    justify-content: normal;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 6px !important;
+    border-color: white;
+    padding: 9px;
+    box-shadow: -2px -1px 7px 5px grey;
+    max-height: 40px;
+    min-width: 148px;
+    margin-left: 4rem;
+    margin-top: 30px;
+}
+.col-md-offset-2 col-md-10{
+padding-top: 10px;
+padding-left: 25px;
+/* text-align: revert; */
+border-color: aqua;
+border-radius: 53px;
+}
+.login-passwordlabel {
+    font-size: 18px;
+}
+.form-control {
+    min-width: 321px;
+}
+.user-form {
+    margin-left: 176px;
+}
+.adduser-label {
+    padding-top: 0rem;
+    padding-left: 45%;
+    font-size: 35px;
+    margin-left: 0rem;
+}
+.adduser-form {
+    margin-right: 25%;
+    justify-content: center;
+    margin-left: 25%;
+    box-shadow: -2px -1px 5px 6px grey;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-top: 62px;
+}
+.adduser-buttom {
+    justify-content: normal;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 6px !important;
+    border-color: white;
+    padding: 9px;
+    box-shadow: -2px -1px 7px 5px grey;
+    max-height: 40px;
+    min-width: 148px;
+    margin-left: 4rem;
+    margin-top: 30px;
+}
+.form-group-buttom {
+    padding-top: 10px;
+    padding-left: 25px;
+    /* text-align: revert; */
+    border-color: aqua;
+    border-radius: 53px;
+}
+.phone-label {
+    font-size: 18px;
+}
+.password-label {
+    font-size: 18px;
+}
+.name-label {
+    font-size: 18px;
+}
+.mail-label {
+    font-size: 18px;
+}
+.form-control-phone {
+    min-width: 321px;
+}
+.form-control-password {
+    min-width: 321px;
+}
+.form-control-name {
+    min-width: 321px;
+}
+.form-control-mail {
+    min-width: 321px;
+}
